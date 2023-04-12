@@ -1,0 +1,16 @@
+.feedMain {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.grid {
+  background-color: aqua;
+}
+
+.amizades {
+  background-color: red;
+}
