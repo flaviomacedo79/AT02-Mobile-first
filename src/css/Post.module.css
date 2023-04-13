@@ -1,0 +1,72 @@
+.postGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.postCard {
+  background: #ccc;
+}
+
+.post,
+.postInfoAutor,
+.postInfo {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post,
+.postInfo {
+  justify-content: space-between;
+}
+
+.postData {
+  font-size: 0.725rem;
+}
+
+.postAutor {
+  display: flex;
+  gap: 10px;
+}
+
+.postImagemAutor {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.postAutor,
+.postInfo {
+  font: 0.75rem;
+}
+
+.postTitulo {
+  font-size: 0.825rem;
+}
+
+.postImagem {
+  width: 100%;
+}
+
+.postTextoAutor {
+  padding: 5px;
+  font-size: 0.675rem;
+}
+
+.postInfo {
+  bottom: 0;
+  font-size: 0.75rem;
+
+  width: 100%;
+  padding: 5px;
+}
+
+@media (max-width: 800px) {
+  .post,
+  .postInfo {
+    flex-direction: column;
+    align-items: start;
+    gap: 0px;
+  }
+}

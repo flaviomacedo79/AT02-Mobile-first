@@ -1,16 +1,43 @@
 .feedMain {
   display: flex;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 100%;
   justify-content: space-around;
   gap: 20px;
 }
 
 .grid {
-  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  background-color: #fff;
 }
 
 .amizades {
-  background-color: red;
+  background-color: yellow;
+  width: 300px;
+}
+
+@media (max-width: 800px) {
+  .feedMain {
+    flex-wrap: wrap;
+  }
+
+  .amizades {
+    order: 1;
+    width: 100%;
+  }
+
+  .grid {
+    order: 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
