@@ -132,7 +132,62 @@ const Feed = () => {
           />
         </section>
         <section className={estilo.amizades}>
-          <Amigos />
+          <Amigos
+            amigoImagemPerfil={
+              "https://img.elo7.com.br/product/main/3B06B23/imagem-digital-jesus-e-leao-foto-para-quadro.jpg"
+            }
+            amigoNomeSugestao={"Doana"}
+            amigosComum={45}
+          />
+          <Amigos
+            amigoImagemPerfil={
+              "https://images.jota.info/wp-content/uploads/2022/11/emilio-garcia-awdcgddedh0-unsplash-1024x598.jpg"
+            }
+            amigoNomeSugestao={"Doana"}
+            amigosComum={45}
+          />
+          <Amigos
+            amigoImagemPerfil={
+              "http://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png"
+            }
+            amigoNomeSugestao={"Doana"}
+            amigosComum={45}
+          />
+          <Amigos
+            amigoImagemPerfil={
+              "https://img.elo7.com.br/product/main/3B06B23/imagem-digital-jesus-e-leao-foto-para-quadro.jpg"
+            }
+            amigoNomeSugestao={"Doana"}
+            amigosComum={45}
+          />
+          <Amigos
+            amigoImagemPerfil={
+              "https://t.ctcdn.com.br/AthW2lYFuEnGURVf4_0FtODm-L8=/720x405/smart/filters:format(webp)/i257652.jpeg"
+            }
+            amigoNomeSugestao={"Doana"}
+            amigosComum={45}
+          />
+          <Amigos
+            amigoImagemPerfil={
+              "https://images.jota.info/wp-content/uploads/2022/11/emilio-garcia-awdcgddedh0-unsplash-1024x598.jpg"
+            }
+            amigoNomeSugestao={"Doana"}
+            amigosComum={45}
+          />
+          <Amigos
+            amigoImagemPerfil={
+              "http://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png"
+            }
+            amigoNomeSugestao={"Doana"}
+            amigosComum={45}
+          />
+          <Amigos
+            amigoImagemPerfil={
+              "https://img.elo7.com.br/product/main/3B06B23/imagem-digital-jesus-e-leao-foto-para-quadro.jpg"
+            }
+            amigoNomeSugestao={"Doana"}
+            amigosComum={45}
+          />
         </section>
       </main>
     </>

@@ -1,50 +1,42 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import Divider from "@mui/material/Divider";
+import ListItemText from "@mui/material/ListItemText";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-  >
-    •
-  </Box>
-);
+import Typography from "@mui/material/Typography";
 
-export default function BasicCard() {
+export default function AlignItemsList(props) {
   return (
-    <>
-      <Card sx={{ minWidth: 275 }}>
-        <div className="align">
-          <CardContent>
-            <Avatar
-              aria-label="recipe"
-              alt="Remy Sharp"
-              src="http://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png"
-              sx={{ width: 56, height: 56 }}
-            />
-            <h1>teste</h1>
-            {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
-        </Typography>
-        <Typography variant="h5" component="div">
-          be{bull}nev{bull}o{bull}lent
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
-        </Typography>
-        <Typography variant="body2">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography> */}
-          </CardContent>
-        </div>
-      </Card>
-    </>
+    <List sx={{ width: "100%", bgcolor: "background.paper" }}>
+      <ListItem alignItems="flex-start">
+        <ListItemAvatar>
+          <Avatar
+            aria-label="recipe"
+            alt="Remy Sharp"
+            src={props.amigoImagemPerfil}
+            sx={{ width: 56, height: 56 }}
+          />
+        </ListItemAvatar>
+        <ListItemText
+          primary={props.amigoNomeSugestao}
+          secondary={
+            <>
+              <Typography
+                sx={{ display: "inline" }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
+                {props.amigosComum}
+              </Typography>
+              {" — em comum."}
+            </>
+          }
+        />
+      </ListItem>
+      <Divider variant="inset" component="li" />
+    </List>
   );
 }
